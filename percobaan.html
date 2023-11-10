@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solar System Animation</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+            overflow: hidden;
+        }
+        .sun {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 75px;
+            animation: rotate-sun 10s linear infinite;
+        }
+
+        .venus {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: aqua;
+            position:static;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 50px; /* Orbit around the sun */
+            animation: rotate-earth 10s linear infinite;
+        }
+
+        .mars {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: orange;
+            position:static;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 100px; /* Orbit around the sun */
+            animation: rotate-earth 20s linear infinite;
+        }
+
+        .earth {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #00f;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 150px; /* Orbit around the sun */
+            animation: rotate-earth 30s linear infinite;
+        }
+
+        .jupiter {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 200px; /* Orbit around the sun */
+            animation: rotate-earth 40s linear infinite;
+        }
+        .moon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: grey;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 70px; /* Orbit around the earth */
+            animation: rotate-moon 50s linear infinite;
+        }
+
+        @keyframes rotate-sun {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes rotate-venus {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes rotate-mars {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-earth {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-jupiter {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-moon {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body">
+    <div class="sun"></div>
+    <div class="venus"></div>
+    <div class="mars"></div>
+    <div class="earth"></div>
+    <div class="jupiter"></div>
+    <div class="moon"></div>
+</body>
+</html>

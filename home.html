@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background:darkgray;
+        height: 90vh;
+    }
+    .container-solar {
+        height: 10vh;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    li {
+    float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    /* Styling for section */
+    .section {
+        text-align: left;
+    }
+    .container-h2 {
+        font-size: 32px;
+        padding-top: 10px;
+        margin: 0% ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-p {
+        font-size: 17px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: justify;
+    }
+    .sun {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: red;
+            position: static;
+            top: 50%;
+            left: 50%;
+            transform-origin: 150px;
+            animation: rotate-sun 5s linear infinite;
+        }
+
+        .venus {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: aqua;
+            position:static;
+            top: 50%;
+            left: 50%;
+            transform-origin: 230px; /* Orbit around the sun */
+            animation: rotate-venus 5s linear infinite;
+        }
+
+        .mars {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: orange;
+            position:static;
+            top: 50%;
+            left: 50%;
+            transform-origin: 100px; /* Orbit around the sun */
+            animation: rotate-mars 5s linear infinite;
+        }
+
+        .earth {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #00f;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 150px; /* Orbit around the sun */
+            animation: rotate-earth 5s linear infinite;
+        }
+
+        .jupiter {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 200px; /* Orbit around the sun */
+            animation: rotate-jupiter 5s linear infinite;
+        }
+        .moon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: black;
+            position: static;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 70px; /* Orbit around the earth */
+            animation: rotate-moon 5s linear infinite;
+        }
+
+        @keyframes rotate-sun {
+            from { transform: rotate(360); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes rotate-venus {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes rotate-mars {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-earth {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-jupiter {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-moon {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+</style>
+</head>
+<body>
+    <!-- The menu -->
+    <ul>
+        <li style="float: inline-end;"><a href="signup.html">Sign Up</a></li>
+        <li style="float: inline-end;"><a href="login.html">Login</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="store.html">Store</a></li>
+    </ul>
+
+    <!-- Section -->
+    <div id="home" class="section">
+        <h2 class="container-h2">Welcome to our Website!</h2>
+        <p class="container-p">This is the home section. Here you can showcase information about your website, introduction, or any featured content.</p>
+        <p class="container-p">Website ini dibuat sepenuhnya dengan chat GPT open AI, jika Anda ingin belajar silahkan dicoba dan apabila ada yang tidak dimengerti tanyakan kami langsung dikontak yang sudah kami sediakan</p>
+        <p class="container-p">Pasti kalian bertanya, apa itu penjara suci? Bagi anak-anak yang setelah lulus sekolah dasar langsung dikirim oleh orang tuanya di daerah antah berantah baginya daerah yang asing yang tak pernah terpikirkan olehnya. Sekolah beragama yang kami biasa sebut pesantren, kenapa kami menyebutnya sebagai penjara suci? Karna memang layaknya seperti penjara. Segala kegiatan apapun ada jadwalnya maupun itu jam bebas pasti ada jadwalnya yang artinya tidak ada kebebasan dalam kebebasan itu sendiri. Dengan begitu kami tahu kapan harus bersantai dan kapan harus bergegas.</p>
+        <p class="container-p">	Oh ya, pesantren dibagi menjadi dua bagian. Ada pesantren modern dan pensantren salafi, pesantren modern adalah tempat belajar seperti pada umumnya, sekolah umum hanya berbeda tidak pulang kerumah dan agak banyak ditambah pelajaran agama. Dalam belajar di pondok pesantren kita dituntut akan selalu menjadi seorang dai minimal untuk diri sendiri terlebih untuk orang lain. Yang pada akhirnya tuntutan tersebut yang akan merubah mindset mereka. Masuk pesantren sama dengan menjadi ustad atau guru. Dan hal itu tidak sepenuhnya disalahkan.</p>
+        <p class="container-p">	Awal mula saya masuk pesantren memang awalnya saya sendiri yang mau karna memang keluarga ayah atau ibu yang dulu nya sekolah pesantren yang mengakibatkan saya ingin seperti mereka, yah namanya juga anak-anak. Satu tahun pertama dua tahun pertama lancar tidak ada yang masalah berarti. Sebetulnya masalah saya tinggal dipesantren bukan kangen dengan orang rumah, tetapi jika uang kiriman lancar tidak bertemu pun tidak masalah. Saya pernah merasakan tidak makan satu penuh di pesantren karna uang jatah bulanan sudah habis dan waktu kiriman masih lama.</p>
+    </div>
+    <div class="container-solar">
+    <div class="sun"></div>
+    <div class="venus"></div>
+    <div class="mars"></div>
+    <div class="earth"></div>
+    <div class="jupiter"></div>
+    <div class="moon"></div>
+    </div>
+<a href="percobaan.html">Rotasi</a>
+</body>
+</html>
